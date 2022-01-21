@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long int ll;
+typedef unsigned long long int ull;
+#define vi vector<int>
+#define vpi vector<pair<int,int> >
+#define mpi map<int,int>
+#define  si set<int>
+#define rep(i,a,n) for(int i=a;i<n;i++)
+#define reP(i,a,n) for(int i=a;i<=n;i++)
+#define YES cout<<"YES\n";
+#define NO cout<<"NO\n";
+#define pb push_back
+#define mp make_pair
+#define fi first
+#define se second
+#define st string
+#define sz size()
+#define case(i,n) Case<<" "<<i<<": "<<n<<endl;
+#define tc ll t;cin>>t;while(t--)
+const int N=100024;
+vi v[N];
+int main()
+{
+    tc
+    {
+
+        ll x,y,n;
+        cin>>x>>y>>n;
+        ll res=n/x;
+        res=(res*x)+y;
+        if(res>n)
+            res=res-x;
+        cout<<res<<endl;
+    }
+}
